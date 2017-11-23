@@ -1,0 +1,55 @@
+<!--
+  Copyright (c) 2015, 2017, Oracle and/or its affiliates.
+  The Universal Permissive License (UPL), Version 1.0
+-->
+<div class="container">
+
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <div class="container" align="center">
+            <label for="SelectFrom"><h4>Select Start Point:
+<select class="btn-info btn-lg" id="SelectFrom">
+  <option value="LA">Langa</option>
+  <option value="SR">Salt River</option>
+  <option value="MB">Mowbray</option>
+  <option value="CM">Claremont</option>
+  <option value="WB">Wynberg</option>
+  <option value="CT">Cape Town</option>
+</select><br></br>
+</label>
+
+            <label for="SelectTo">Select End Point:
+<select class="btn-info btn-lg" id="SelectTo">
+  <option value="CT">Cape Town</option>
+  <option value="SR">Salt River</option>
+  <option value="MB">Mowbray</option>
+  <option value="CM">Claremont</option>
+  <option value="WB">Wynberg</option>
+  <option value="LA">Langa</option>
+</select></h4>
+</label><br>
+            <h5>
+<input type="button" class='btn btn-primary btn-lg' name="name" data-bind="click:clickhandler"value="Go"><br></br>
+</h5>
+
+            <h4>Driving:</h4>
+            <p data-bind="text : distance"></p>
+            <p data-bind="text: duration"></p>
+
+            <div class="" style="display:inline-block">
+                <h4>Walking:</h4>
+                <p data-bind="text : distanceWalk"></p>
+                <p data-bind="text: durationWalk"></p>
+            </div>
+
+
+            <p data-bind="text: message"></p>
+            <div id="googleMap" data-bind="style: {height: height, width: width  }"></div>
+
+        </div>
+</div>
+</body>

@@ -1,0 +1,24 @@
+{
+  "name": "map-wrapper",
+  "displayName": "map-wrapper",
+  "description": "Draw a google map on a location",
+  "version": "1.0.0",
+  "jetVersion": "^4.0.0",
+  "properties": {
+    "height":{
+      "type": "string"
+    },
+    "width":{
+    "type":"string"
+    }
+  },
+  "methods": {
+
+  },
+  "events": {
+
+  },
+  "slots": {
+
+  }
+}
